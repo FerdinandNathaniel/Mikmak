@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Voorbeeld Mikmak</h1>
+
+<label for="kledingkleur">Kies een kledingkleur:</label>
+<select name="kledingkleur" id="kledingkleur">
+    <option value="Rood">Rood</option>
+    <option value="Zwart">Zwart</option>
+    <option value="Geel">Geel</option>
+</select>
+
+<p></p>
+
+<label for="kledingkleurextra" id="kledingkleurextra_label">Geel is lelijk, kies aub een van de volgende kleuren:</label>
+<select name="kledingkleurextra" id="kledingkleurextra">
+    <option value="Rood">Rood</option>
+    <option value="Zwart">Zwart</option>
+</select>
+
+<script type="text/javascript" language="javascript">
+// 
+    $('#kledingkleurextra').hide();
+    $('#kledingkleurextra_label').hide();
+
+    $("#kledingkleur").change( function(){
+        console.log($(this).val());
+        if($(this).val() == "Geel"){
+            $('#kledingkleurextra').show();
+            $('#kledingkleurextra_label').show();
+        } else {
+            $('#kledingkleurextra').hide();
+            $('#kledingkleurextra_label').hide();
+        }
+    });
+</script>
+
+
+</body>
+</html>
