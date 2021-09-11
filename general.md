@@ -27,4 +27,13 @@ ___
   - in header, na basis ecwid calls, voordat de andere invoervelden aangemaakt worden
     - zou in principe niet moeten boeien, afgezien van het aanmaken van invoervelden omdat deze dan hoger zullen staan ipv onderaan de opties?
 
-- 
+- https://chromium.googlesource.com/chromium/src/+/refs/heads/main/services/network/cross_origin_read_blocking_explainer.md
+  - Hoe dit te fixen?
+  - console read out: 'Cross-Origin Read Blocking (CORB) blocked cross-origin response with MIME type text/plain.'
+    - via ecwid andere link, github zou toch moeten werken, zit het in de vorm van het document?
+      - Enkel comments werkt niet
+      - Meest basale console read out werkt niet
+      - https://stackoverflow.com/questions/55159973/how-to-solve-this-problem-cross-origin-read-blocking-corb-blocked-cross-orig
+        - Ligt misschien aan Ajax call, misschien de jquery download? Maar wanneer die gecomment is zelfde drama..
+        - Server-side probleem van ecwid?
+        - Mensen geven aan een directie te hebben om te zoeken nu naar kern probleem, maar heb daar zelf geen kennis van.
