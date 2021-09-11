@@ -8,12 +8,8 @@
 //   if (typeof jQuery == 'undefined') {  
 //     loadjQuery();
 //   } else {}
-  
-// app code
-// Ecwid.OnAPILoaded.add(function() {
-//     Ecwid.openPage('product', {'id': 72585497, 'name': "Rip Curl Channel Island", 'variation': 16351010});
-//   });
 
+// To test most basic console output
 // var publicToken = Ecwid.getAppPublicToken('my-cool-app');
 
 // console.log(publicToken);
